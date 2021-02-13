@@ -1,0 +1,29 @@
+{% extends 'views/layout/layout.html' %}
+
+{% block css %}
+  <link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block javascript %}
+  <script>
+    PAGE_MODE = '{{ data.page }}';
+  </script>
+  
+  <!-- <script src="/static/js/index.js"></script> -->
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <div class="upload">
+      <button class="btn btn-success font-weight-bold">Upload yourself</button>
+    </div>
+    
+    <main>
+      <div class="article-list" id="article-list"></div>
+      <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>
+    </main>
+  </div>
+
+  <script src="/static/js/index.js"></script>
+
+{% endblock %}
