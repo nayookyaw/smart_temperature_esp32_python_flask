@@ -22,7 +22,9 @@ function getArticleImage() {
 	image.className = 'article-list__item__image article-list__item__image--loading';
 
 	console.log("testing..");
-	// image.src = 'http://api.adorable.io/avatars/250/' + hash;
+	image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/command_centre_gui2+initial+setting.png';
+	
+	// image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/IMG_3492.JPG';
 	
 	image.onload = function() {
 		image.classList.remove('article-list__item__image--loading');
@@ -40,7 +42,7 @@ function getArticle() {
 	return article;
 }
 
-function getArticlePage(page, articlesPerPage = 10) {
+function getArticlePage(page, articlesPerPage = offset) {
 	const pageElement = document.createElement('div');
 	pageElement.id = getPageId(page);
 	pageElement.className = 'article-list__page';
@@ -74,12 +76,13 @@ function fetchPage(page) {
 
 function addPage(page) {
 	fetchPage(page);
-	addPaginationPage(page);
+	// addPaginationPage(page);
 }
 
 const articleList = document.getElementById('article-list');
 const articleListPagination = document.getElementById('article-list-pagination');
 let page = 0;
+let offset = 10;
 
 addPage(++page);
 
