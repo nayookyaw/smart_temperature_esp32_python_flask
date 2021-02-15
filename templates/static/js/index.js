@@ -1,3 +1,26 @@
+
+
+const articleList = document.getElementById('article-list');
+const articleListPagination = document.getElementById('article-list-pagination');
+let page = 0;
+let offset = 10;
+
+addPage(++page);
+
+window.onscroll = function() {
+	if (getScrollTop() < getDocumentHeight() - window.innerHeight) return;
+	addPage(++page);
+};
+
+function fetchPage(page) {
+	articleList.appendChild(getArticlePage(page));
+}
+
+function addPage(page) {
+	fetchPage(page);
+	// addPaginationPage(page);
+}
+
 function getPageId(n) {
 	return 'article-page-' + n;
 }
@@ -22,10 +45,10 @@ function getArticleImage() {
 	image.className = 'article-list__item__image article-list__item__image--loading';
 
 	console.log("testing..");
-	image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/command_centre_gui2+initial+setting.png';
+	// image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/command_centre_gui2+initial+setting.png';
 	
-	// image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/IMG_3492.JPG';
-	
+	image.src = 'https://myanmar-revolution.s3-ap-southeast-1.amazonaws.com/revolution-images/IMG_3552.JPG';
+
 	image.onload = function() {
 		image.classList.remove('article-list__item__image--loading');
 	};
@@ -70,23 +93,3 @@ function addPaginationPage(page) {
 	}
 }
 
-function fetchPage(page) {
-	articleList.appendChild(getArticlePage(page));
-}
-
-function addPage(page) {
-	fetchPage(page);
-	// addPaginationPage(page);
-}
-
-const articleList = document.getElementById('article-list');
-const articleListPagination = document.getElementById('article-list-pagination');
-let page = 0;
-let offset = 10;
-
-addPage(++page);
-
-window.onscroll = function() {
-	if (getScrollTop() < getDocumentHeight() - window.innerHeight) return;
-	addPage(++page);
-};

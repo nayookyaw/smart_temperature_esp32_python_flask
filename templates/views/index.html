@@ -8,14 +8,15 @@
   <script>
     PAGE_MODE = '{{ data.page }}';
   </script>
-  
-  <!-- <script src="/static/js/index.js"></script> -->
+
 {% endblock %}
 
 {% block content %}
   <div class="content">
     <div class="upload">
-      <button class="btn btn-success font-weight-bold">Upload yourself</button>
+      <a href={{ url_for ('upload_page') }}>
+        <button class="btn btn-success font-weight-bold">Upload yourself</button>
+      </a>
     </div>
     
     <main>
