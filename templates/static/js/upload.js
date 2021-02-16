@@ -37,7 +37,8 @@ function upload() {
         cache: false,
         processData: false,
         success: function(response) {
-          console.log("SUcess");
+          Swal.fire('Upload Success');
+          clear_img();
         },
         error: function(err) {
             console.log(err);
@@ -55,4 +56,5 @@ function clear_img() {
   $("#preview_img").attr("src", "#");
   $('#caution').show();
   image_file = null;
+  $("#preview").css({"height":"0px"});
 }

@@ -41,6 +41,7 @@ body {
   width: 100%; 
   font-weight: bold;
   font-size: 30px;
+  cursor: pointer;
   font-family: 'math';
 }
 
@@ -52,12 +53,17 @@ body {
       }
   }
 
+.header_text a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .header_action {
   width: 30%;
   font-size: 15px;
   line-height: 40px;
   height: 40px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
 }
 
@@ -70,6 +76,11 @@ body {
         height: 0px;
       }
   }
+
+.header_action a {
+  text-decoration: underline;
+  color: antiquewhite;
+}
 
 .current {
 	background-color: black !important;
