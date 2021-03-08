@@ -1,5 +1,5 @@
 /*
-    Developed by Nay Oo Kyaw
+    Developed by Nay Oo Kyaw <br>
     nayookyaw.nok@gmail.com
 */
 # Overview
