@@ -2,7 +2,6 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  
 }
 
 body {
@@ -80,12 +79,6 @@ body {
 .header_action a {
   text-decoration: underline;
   color: antiquewhite;
-}
-
-.current {
-	background-color: black !important;
-  color: #3ad6d1 !important;
-  font-weight: bold;
 }
 
 .footer {

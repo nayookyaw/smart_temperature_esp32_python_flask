@@ -13,16 +13,20 @@
 
 {% block content %}
   <div class="content">
-    <div class="upload">
-      <a href={{ url_for ('upload_page') }}>
-        <button class="btn btn-success font-weight-bold">Upload yourself</button>
-      </a>
+    <div>
+      Current Room Temperature - <span style="color: aqua;"> 33 °C </span> 
     </div>
-    
-    <main>
-      <div class="article-list" id="article-list"></div>
-      <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>
-    </main>
+    <br/><br/>
+    <i>The temperature is updated from ESP32 to AWS cloud server</i>
+    <br/><br/>
+    <hr style="background-color: white"/>
+    <div>
+      Room Temperature can be seen from Anywhere across Internet<br/>
+      Hardware - ESP32, DS18B20 temperature sensor <br/>
+      Programming - Python (Flask), Pickle(Storage), Jquery, HTML, CSS <br/>
+      Server - AWS (Amazon)
+    </div>
+
   </div>
 
   <script src="/static/js/index.js"></script>
