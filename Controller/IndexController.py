@@ -1,5 +1,5 @@
 from flask import render_template, request, jsonify
-import random, string, datetime
+import random, string, datetime, json
 
 # from __main__ import db
 # from Models.Images import Images
@@ -14,5 +14,9 @@ class IndexController:
 	
 	def save_temperature():
 		data = request.get_json('data')
+		print (data)
+
+		with open('temperature.json', 'w') as fp:
+			json.dump(data, fp)
 
 		return jsonify({ "success" : 'count' })

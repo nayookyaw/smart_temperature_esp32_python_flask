@@ -15,7 +15,7 @@ JavaScript (Jquery) <br>
 HTML, CSS <br>
 
 # Storage
-pickle
+json
 
 # IDE
 Visual Studio Code <br>
