@@ -5,14 +5,18 @@
 # Overview
 This project can use to monitor Room Temperature across Internet from anywhere <br>
 
+# Run
+$ python server.py
+
 # Hardware
 ESP32 <br>
 DS18B20 temperature sensor <br>
 
 # Technologies
 Python (Flask) <br>
-JavaScript (Jquery) <br>
-HTML, CSS <br>
+JavaScript (Jquery), JSON, Ajax <br>
+HTML5, CSS3 <br>
+Class, OOP Concepts
 
 # Storage
 json
@@ -21,6 +25,4 @@ json
 Visual Studio Code <br>
 Arduino IDE 
 
-# Required modules
-$ pip3 install flask <br>
 
