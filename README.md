@@ -1,7 +1,7 @@
-/*
-    Developed by Nay Oo Kyaw <br>
+
+    Nay Oo Kyaw 
     nayookyaw.nok@gmail.com
-*/
+    
 # Overview
 This project can use to monitor Room Temperature across Internet from anywhere <br>
 
